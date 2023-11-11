@@ -1,0 +1,398 @@
+[1mdiff --git a/assets/css/style.css b/assets/css/style.css[m
+[1mindex de64be1..c394ab9 100644[m
+[1m--- a/assets/css/style.css[m
+[1m+++ b/assets/css/style.css[m
+[36m@@ -1,11 +1,7 @@[m
+ @import url("https://kit.fontawesome.com/bc2668a83f.js");[m
+ [m
+ [m
+[31m-/* body{[m
+[31m-    background-color: #A6FF96;[m
+[31m-} */[m
+ #navbar{[m
+[31m-    /* background-color: #A6FF96!important; */[m
+     background: radial-gradient(circle at 10% 20%, rgb(128, 248, 174) 0%, rgb(223, 244, 148) 90%);[m
+     color: white;[m
+ }[m
+[36m@@ -19,9 +15,7 @@[m
+     display: block;[m
+ }[m
+ #home{[m
+[31m-    /* background-color: #A6FF96; */[m
+     background: radial-gradient(circle at 10% 20%, rgb(128, 248, 174) 0%, rgb(223, 244, 148) 90%);[m
+[31m-    [m
+     padding-bottom: 50px;[m
+ }[m
+ .img-home{[m
+[36m@@ -43,6 +37,11 @@[m
+ #aboutUs{[m
+     background-color: white;[m
+ }[m
+[32m+[m[32ma.active{[m
+[32m+[m[32m    font-weight: bold;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m/* section modals */[m
+ table{[m
+     width: 100%;[m
+ }[m
+[36m@@ -50,25 +49,24 @@[m [mtable{[m
+     background: radial-gradient(circle at 10% 20%, rgb(128, 248, 174) 0%, rgb(223, 244, 148) 90%);[m
+     color: #fff;[m
+ }[m
+[32m+[m[32mth{[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m}[m
+ [m
+ /* section About Us */[m
+[31m-[m
+ .test1{[m
+[31m-    margin-top: 120px;[m
+[32m+[m[32m    margin-top: 90px;[m
+ [m
+ }[m
+[31m-[m
+ .h1-aboutus{[m
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;[m
+     font-size: 50px;[m
+ }[m
+[31m-[m
+ .test2{[m
+     width: 500px;[m
+     /* margin-left: 70px; */[m
+     margin-top: 110px;[m
+ }[m
+[31m-[m
+ .p2{[m
+     text-align: justify;[m
+     padding: 8px;[m
+[36m@@ -76,10 +74,9 @@[m [mtable{[m
+ [m
+ /* section Portofolio */[m
+ #portofolio{[m
+[31m-    /* background-color: #A6FF96; */[m
+     background: radial-gradient(circle at 10% 20%, rgb(128, 248, 174) 0%, rgb(223, 244, 148) 90%);[m
+[31m-[m
+     padding-bottom: 50px;[m
+[32m+[m[32m    padding-top: 50px;[m
+ }[m
+ [m
+ .carousel-inner {[m
+[36m@@ -348,7 +345,6 @@[m [mtable{[m
+     text-align: center;[m
+     text-decoration: none;[m
+     color: black;[m
+[31m-    /* background-color: #a6ff96; */[m
+     box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);[m
+     border-radius: 100%;[m
+ }[m
+[1mdiff --git a/assets/img/home/icon.png b/assets/img/home/icon.png[m
+[1mindex 7905ca5..9f387dd 100644[m
+Binary files a/assets/img/home/icon.png and b/assets/img/home/icon.png differ
+[1mdiff --git a/assets/js/script.js b/assets/js/script.js[m
+[1mindex e69de29..37761cc 100644[m
+[1m--- a/assets/js/script.js[m
+[1m+++ b/assets/js/script.js[m
+[36m@@ -0,0 +1,115 @@[m
+[32m+[m[32m//------------------active link-------------------------------[m
+[32m+[m[32mlet menuHeader = document.getElementById("menuHeader");[m
+[32m+[m[32mlet menu = menuHeader.getElementsByClassName("nav-link");[m
+[32m+[m[32mfor (let i = 0; i < menu.length; i++) {[m
+[32m+[m[32m  menu[i].addEventListener("click", function() {[m
+[32m+[m[32m  let current = document.getElementsByClassName("active");[m
+[32m+[m[32m  current[0].className = current[0].className.replace(" active", "");[m
+[32m+[m[32m  this.className += " active";[m
+[32m+[m[32m  });[m
+[32m+[m[32m}[m
+[32m+[m[32m//------------------end active link--------------------------[m
+[32m+[m
+[32m+[m
+[32m+[m[32m//------------------to do------------------------------------[m
+[32m+[m[32mlet fiturList = [[m
+[32m+[m[32m  { id: '1', name: 'Web Hosting', price: 1000000 },[m
+[32m+[m[32m  { id: '2', name: 'Wifi', price: 2000000 },[m
+[32m+[m[32m  { id: '3', name: 'CCTV', price: 3000000 },[m
+[32m+[m[32m  { id: '4', name: 'Pemasangan Jaringan', price: 4000000 },[m
+[32m+[m[32m  { id: '5', name: 'Design Web', price: 5000000 },[m
+[32m+[m[32m];[m
+[32m+[m
+[32m+[m[32mlet checklist = document.querySelectorAll('.checkbox'); // get dari checkbox yg di centang[m
+[32m+[m[32mlet dataList = document.getElementById('dataList'); //tampil data di id datalist[m[41m [m
+[32m+[m[32mlet orderBtn = document.getElementById('orderBtn');[m
+[32m+[m
+[32m+[m
+[32m+[m[32mchecklist.forEach(function (checkbox) {[m
+[32m+[m[32m  checkbox.addEventListener('change', function () {[m
+[32m+[m[32m    dataList.innerHTML = '';[m
+[32m+[m
+[32m+[m[32m    checklist.forEach(function (checkbox) {[m
+[32m+[m[32m      if (checkbox.checked) {[m
+[32m+[m[32m        // find & display[m[41m  [m
+[32m+[m[32m        let fitur = fiturList.find(function (item) {[m
+[32m+[m[32m          return item.id === checkbox.id;[m
+[32m+[m[32m        });[m
+[32m+[m
+[32m+[m[32m        if (fitur) {[m
+[32m+[m[32m          let listFitur = document.getElementById('dataList');[m
+[32m+[m[32m          let newList = document.createElement('div');[m
+[32m+[m[32m          newList.setAttribute("style", "display:inline;");[m
+[32m+[m[32m          newList.textContent = `${fitur.name}, `;[m
+[32m+[m[32m          listFitur.appendChild(newList);[m
+[32m+[m[32m        }[m
+[32m+[m[32m      }[m
+[32m+[m[32m    });[m
+[32m+[m
+[32m+[m[32m  });[m
+[32m+[m[32m});[m
+[32m+[m
+[32m+[m[32m// function save[m
+[32m+[m[32morderBtn.addEventListener('click', function () {[m
+[32m+[m[32m  let orderFitur = [];[m
+[32m+[m[32m  checklist.forEach(function (checkbox) {[m
+[32m+[m[32m    if (checkbox.checked) {[m
+[32m+[m[32m      // Menampilkan data berdasarkan ID checkbox yang dipilih[m
+[32m+[m[32m      let selectedData = fiturList.find(function (item) {[m
+[32m+[m[32m        return item.id === checkbox.id;[m
+[32m+[m[32m      });[m
+[32m+[m[32m      if (selectedData) {[m
+[32m+[m[32m        orderFitur.push(selectedData);[m
+[32m+[m[32m      }[m
+[32m+[m[32m    }[m
+[32m+[m[32m  });[m
+[32m+[m[32m  localStorage.setItem('orderFitur', JSON.stringify(orderFitur)); //save to local storage[m
+[32m+[m[32m});[m
+[32m+[m
+[32m+[m[32m//function close[m
+[32m+[m[32mcloseBtn.addEventListener('click', function () {[m
+[32m+[m[32m    checklist.forEach(function (checkbox) {[m
+[32m+[m[32m      if (checkbox.checked) {[m
+[32m+[m[32m          checkbox.checked = false; //uncheck[m
+[32m+[m[32m          dataList.innerHTML = '-';  //remove list[m
+[32m+[m[32m      }[m
+[32m+[m[32m    });[m
+[32m+[m[32m  // remove from local storage[m
+[32m+[m[32m  localStorage.removeItem('orderFitur');[m
+[32m+[m[32m});[m
+[32m+[m[32m//------------------end to do------------------------------------[m
+[32m+[m
+[32m+[m
+[32m+[m[32m////------------------portofolio---------------------------------[m
+[32m+[m[32mlet portofolioCard = document.querySelector([m
+[32m+[m[32m  "#portofolio-slider"[m
+[32m+[m[32m);[m
+[32m+[m[32mif (window.matchMedia("(min-width: 768px)").matches) {[m
+[32m+[m[32m  let carousel = new bootstrap.Carousel(portofolioCard, {[m
+[32m+[m[32m    interval: false,[m
+[32m+[m[32m  });[m
+[32m+[m[32m  let portofolioWidth = $(".carousel-inner")[0].scrollWidth;[m
+[32m+[m[32m  let cardWidth = $(".carousel-item").width();[m
+[32m+[m[32m  let scrollPosition = 0;[m
+[32m+[m[32m  $("#portofolio-slider .carousel-control-next").on("click", function () {[m
+[32m+[m[32m    if (scrollPosition < portofolioWidth - cardWidth * 4) {[m
+[32m+[m[32m      scrollPosition += cardWidth;[m
+[32m+[m[32m      $("#portofolio-slider .carousel-inner").animate([m
+[32m+[m[32m        { scrollLeft: scrollPosition },[m
+[32m+[m[32m        600[m
+[32m+[m[32m      );[m
+[32m+[m[32m    }[m
+[32m+[m[32m  });[m
+[32m+[m[32m  $("#portofolio-slider .carousel-control-prev").on("click", function () {[m
+[32m+[m[32m    if (scrollPosition > 0) {[m
+[32m+[m[32m      scrollPosition -= cardWidth;[m
+[32m+[m[32m      $("#portofolio-slider .carousel-inner").animate([m
+[32m+[m[32m        { scrollLeft: scrollPosition },[m
+[32m+[m[32m        600[m
+[32m+[m[32m      );[m
+[32m+[m[32m    }[m
+[32m+[m[32m  });[m
+[32m+[m[32m} else {[m
+[32m+[m[32m  $(portofolioCard).addClass("slide");[m
+[32m+[m[32m}[m
+[32m+[m[32m//------------------end portofolio---------------------------------[m
+\ No newline at end of file[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex fe09efc..d2c4df5 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -4,7 +4,9 @@[m
+ <head>[m
+   <meta charset="UTF-8">[m
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[31m-  <title>Gass Project</title>[m
+[32m+[m[32m  <link rel="icon" href="/assets/img/home/icon2.png">[m
+[32m+[m[32m  <title>GASS | Final Project I</title>[m
+[32m+[m[41m  [m
+ [m
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"[m
+     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">[m
+[36m@@ -15,7 +17,7 @@[m
+ <body>[m
+   <nav class="navbar sticky-top navbar-expand-lg bg-light" id="navbar">[m
+     <div class="container">[m
+[31m-      <img src="assets/img/home/icon.png" width="60px">[m
+[32m+[m[32m      <img src="assets/img/home/icon.png" width="70px">[m
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"[m
+         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">[m
+         <span class="navbar-toggler-icon"></span>[m
+[36m@@ -25,21 +27,21 @@[m
+           <a class="navbar-brand nameBrand" href="#" hidden> GASS</a>[m
+         </ul>[m
+ [m
+[31m-        <ul class="navbar-nav d-flex">[m
+[32m+[m[32m        <ul class="navbar-nav d-flex" id="menuHeader">[m
+           <li class="nav-item">[m
+             <a class="nav-link active" aria-current="page" href="#">Home</a>[m
+           </li>[m
+           <li class="nav-item">[m
+[31m-            <a class="nav-link" href="#">About Us</a>[m
+[32m+[m[32m            <a class="nav-link" href="#aboutUs">About Us</a>[m
+           </li>[m
+           <li class="nav-item">[m
+[31m-            <a class="nav-link" href="#">Portofolio</a>[m
+[32m+[m[32m            <a class="nav-link" href="#portofolio">Portofolio</a>[m
+           </li>[m
+           <li class="nav-item">[m
+[31m-            <a class="nav-link" href="#">Blog</a>[m
+[32m+[m[32m            <a class="nav-link" href="#blog">News & Blog</a>[m
+           </li>[m
+           <li class="nav-item">[m
+[31m-            <a class="nav-link" href="#">Contact Us</a>[m
+[32m+[m[32m            <a class="nav-link" href="#contact">Contact Us</a>[m
+           </li>[m
+         </ul>[m
+       </div>[m
+[36m@@ -74,17 +76,19 @@[m
+   <section id="aboutUs">[m
+     <div class="container">[m
+       <div class="row">[m
+[31m-        [m
+[31m-        <div class="col test1 text-center" >[m
+[32m+[m
+[32m+[m[32m        <div class="col test1 text-center">[m
+           <h1 class="h1-aboutus">ABOUT US !</h1>[m
+           <p class="p2">[m
+[31m-            Di GASS, kami menyediakan sejumlah layanan teknologi yang dapat memenuhi kebutuhan bisnis dan individu. [m
+[31m-            Kami ahli dalam merancang dan memasang jaringan WiFi yang kuat dan andal, memastikan Anda tetap terhubung dengan [m
+[31m-            dunia digital dengan kecepatan tinggi. [m
+             <br>[m
+[32m+[m[32m            GASS menyediakan sejumlah layanan teknologi yang dapat memenuhi kebutuhan bisnis dan individu.[m
+[32m+[m[32m            Kami ahli dalam merancang dan memasang jaringan WiFi yang kuat dan andal, memastikan Anda tetap terhubung dengan dunia digital dengan kecepatan tinggi.[m
+[32m+[m[32m            <br>[m
+[32m+[m[32m            <br>[m
+[32m+[m[32m            Selain itu, kami juga membantu membangun infrastruktur jaringan yang mendukung pertumbuhan bisnis Anda,memastikan kelancaran komunikasi, dan memaksimalkan produktivitas. Dalam dunia online yang terus berkembang, kami menyediakan hosting web yang andal dan aman, memungkinkan situs web Anda tetap online 24/7.[m
+             <br>[m
+[31m-            Selain itu, kami juga membantu membangun infrastruktur jaringan yang mendukung pertumbuhan bisnis Anda, [m
+[31m-            memastikan kelancaran komunikasi, dan memaksimalkan produktivitas. Dalam dunia online yang terus berkembang, kami menyediakan hosting web yang andal dan aman, memungkinkan situs web Anda tetap online 24/7. Keamanan adalah prioritas kami, dan kami menyediakan sistem CCTV canggih untuk melindungi aset Anda dan memantau lingkungan sekitar dengan ketelitian tinggi. Dengan GASS, Anda dapat mengandalkan solusi teknologi yang terintegrasi untuk menjawab kebutuhan Anda.[m
+[32m+[m[32m            <br>[m
+[32m+[m[32m            Keamanan adalah prioritas kami, dan kami menyediakan sistem CCTV canggih untuk melindungi aset Anda dan memantaulingkungan sekitar dengan ketelitian tinggi. Dengan GASS, Anda dapat mengandalkan solusi teknologi yang terintegrasi untuk menjawab kebutuhan Anda.[m
+           </p>[m
+         </div>[m
+         <div class="col-md-6 test2">[m
+[36m@@ -97,68 +101,67 @@[m
+   <!-- portofolio -->[m
+   <section id="portofolio" class="mt-5">[m
+     <div class="container">[m
+[31m-      <br>[m
+       <h1 class="ms-4 text-center portofolio-title">PORTOFOLIO</h1>[m
+       <div id="portofolio-slider" class="carousel">[m
+         <div class="carousel-inner">[m
+[31m-            <div class="carousel-item active">[m
+[31m-                <div class="card portofolio-content">[m
+[31m-                    <img class="img-fluid portofolio-image" alt="100%x280" src="assets/img/portofolio/logo_pln.jpg">[m
+[31m-                    <div class="card-body portofolio-content-text">[m
+[31m-                        <h5 class="card-title">PT PLN</h5>[m
+[31m-                        <p class="card-text">Pemasangan sistem perangkat CCTV nirkabel di PT PLN</p>[m
+[31m-                        <p class="card-text">2023</p>[m
+[31m-                    </div>[m
+[31m-                </div>[m
+[32m+[m[32m          <div class="carousel-item active">[m
+[32m+[m[32m            <div class="card portofolio-content">[m
+[32m+[m[32m              <img class="img-fluid portofolio-image" alt="100%x280" src="assets/img/portofolio/logo_pln.jpg">[m
+[32m+[m[32m              <div class="card-body portofolio-content-text">[m
+[32m+[m[32m                <h5 class="card-title">PT PLN</h5>[m
+[32m+[m[32m                <p class="card-text">Pemasangan sistem perangkat CCTV nirkabel di PT PLN</p>[m
+[32m+[m[32m                <p class="card-text">2023</p>[m
+[32m+[m[32m              </div>[m
+             </div>[m
+[31m-            <div class="carousel-item">[m
+[31m-              <div class="card portofolio-content">[m
+[31m-                <img class="img-fluid portofolio-image" alt="100%x280" src="assets/img/portofolio/logo_wgs.jpg">[m
+[31m-                <div class="card-body portofolio-content-text">[m
+[31m-                    <h5 class="card-title">PT WGS</h5>[m
+[31m-                    <p class="card-text">Pembuatan hosting pada web company profile PT WGS</p>[m
+[31m-                    <p class="card-text">2023</p>[m
+[31m-                </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="carousel-item">[m
+[32m+[m[32m            <div class="card portofolio-content">[m
+[32m+[m[32m              <img class="img-fluid portofolio-image" alt="100%x280" src="assets/img/portofolio/logo_wgs.jpg">[m
+[32m+[m[32m              <div class="card-body portofolio-content-text">[m
+[32m+[m[32m                <h5 class="card-title">PT WGS</h5>[m
+[32m+[m[32m                <p class="card-text">Pembuatan hosting pada web company profile PT WGS</p>[m
+[32m+[m[32m                <p class="card-text">2023</p>[m
+               </div>[m
+             </div>[m
+[31m-            <div class="carousel-item">[m
+[31m-              <div class="card portofolio-content">[m
+[31m-                <img class="img-fluid portofolio-image" alt="100%x280" src="assets/img/portofolio/logo_telkom.jpg">[m
+[31m-                <div class="card-body portofolio-content-text">[m
+[31m-                    <h5 class="card-title">PT Telkom</h5>[m
+[31m-                    <p class="card-text">Pemasangan jaringan komputer baru dan perawatan jaringan PT Telkom</p>[m
+[31m-                    <p class="card-text">2022</p>[m
+[31m-                </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="carousel-item">[m
+[32m+[m[32m            <div class="card portofolio-content">[m
+[32m+[m[32m              <img class="img-fluid portofolio-image" alt="100%x280" src="assets/img/portofolio/logo_telkom.jpg">[m
+[32m+[m[32m              <div class="card-body portofolio-content-text">[m
+[32m+[m[32m                <h5 class="card-title">PT Telkom</h5>[m
+[32m+[m[32m                <p class="card-text">Pemasangan jaringan komputer baru dan perawatan jaringan PT Telkom</p>[m
+[32m+[m[32m                <p class="card-text">2022</p>[m
+               </div>[m
+             </div>[m
+[31m-            <div class="carousel-item">[m
+[31m-              <div class="card portofolio-content">[m
+[31m-                <img class="img-fluid portofolio-image" alt="100%x280" src="assets/img/portofolio/logo_gi.jpg">[m
+[31m-                <div class="card-body portofolio-content-text">[m
+[31m-                    <h5 class="card-title">PT Garuda</h5>[m
+[31m-                    <p class="card-text">Maintenance jaringan dan software pada PT Garuda</p>[m
+[31m-                    <p class="card-text">2022</p>[m
+[31m-                </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="carousel-item">[m
+[32m+[m[32m            <div class="card portofolio-content">[m
+[32m+[m[32m              <img class="img-fluid portofolio-image" alt="100%x280" src="assets/img/portofolio/logo_gi.jpg">[m
+[32m+[m[32m              <div class="card-body portofolio-content-text">[m
+[32m+[m[32m                <h5 class="card-title">PT Garuda</h5>[m
+[32m+[m[32m                <p class="card-text">Maintenance jaringan dan software pada PT Garuda</p>[m
+[32m+[m[32m                <p class="card-text">2022</p>[m
+               </div>[m
+             </div>[m
+[31m-            <div class="carousel-item">[m
+[31m-              <div class="card portofolio-content">[m
+[31m-                <img class="img-fluid portofolio-image" alt="100%x280" src="assets/img/portofolio/logo_kai.jpg">[m
+[31m-                <div class="card-body portofolio-content-text">[m
+[31m-                    <h5 class="card-title">PT KAI</h5>[m
+[31m-                    <p class="card-text">Pemasangan wifi pada rangkaian gerbong PT KAI</p>[m
+[31m-                    <p class="card-text">2021</p>[m
+[31m-                </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="carousel-item">[m
+[32m+[m[32m            <div class="card portofolio-content">[m
+[32m+[m[32m              <img class="img-fluid portofolio-image" alt="100%x280" src="assets/img/portofolio/logo_kai.jpg">[m
+[32m+[m[32m              <div class="card-body portofolio-content-text">[m
+[32m+[m[32m                <h5 class="card-title">PT KAI</h5>[m
+[32m+[m[32m                <p class="card-text">Pemasangan wifi pada rangkaian gerbong PT KAI</p>[m
+[32m+[m[32m                <p class="card-text">2021</p>[m
+               </div>[m
+             </div>[m
+[32m+[m[32m          </div>[m
+         </div>[m
+         <button class="carousel-control-prev" type="button" data-bs-target="#portofolio-slider" data-bs-slide="prev">[m
+[31m-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>[m
+[31m-            <span class="visually-hidden">Previous</span>[m
+[32m+[m[32m          <span class="carousel-control-prev-icon" aria-hidden="true"></span>[m
+[32m+[m[32m          <span class="visually-hidden">Previous</span>[m
+         </button>[m
+         <button class="carousel-control-next" type="button" data-bs-target="#portofolio-slider" data-bs-slide="next">[m
+[31m-            <span class="carousel-control-next-

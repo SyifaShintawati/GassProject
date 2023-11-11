@@ -1,11 +1,7 @@
 @import url("https://kit.fontawesome.com/bc2668a83f.js");
 
 
-/* body{
-    background-color: #A6FF96;
-} */
 #navbar{
-    /* background-color: #A6FF96!important; */
     background: radial-gradient(circle at 10% 20%, rgb(128, 248, 174) 0%, rgb(223, 244, 148) 90%);
     color: white;
 }
@@ -19,9 +15,7 @@
     display: block;
 }
 #home{
-    /* background-color: #A6FF96; */
     background: radial-gradient(circle at 10% 20%, rgb(128, 248, 174) 0%, rgb(223, 244, 148) 90%);
-    
     padding-bottom: 50px;
 }
 .img-home{
@@ -43,6 +37,11 @@
 #aboutUs{
     background-color: white;
 }
+a.active{
+    font-weight: bold;
+}
+
+/* section modals */
 table{
     width: 100%;
 }
@@ -50,35 +49,33 @@ table{
     background: radial-gradient(circle at 10% 20%, rgb(128, 248, 174) 0%, rgb(223, 244, 148) 90%);
     color: #fff;
 }
+th{
+    text-align: center;
+}
 
 /* section About Us */
-
 .test1{
     margin-top: 55px;
 
 }
-
 .h1-aboutus{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 50px;
     margin-top: 50px;
 }
-
 .test2{
     width: 500px;
     margin-top: 20px;
 }
-
 .p2{
     text-align: justify;
 }
 
 /* section Portofolio */
 #portofolio{
-    /* background-color: #A6FF96; */
     background: radial-gradient(circle at 10% 20%, rgb(128, 248, 174) 0%, rgb(223, 244, 148) 90%);
-
     padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .carousel-inner {
