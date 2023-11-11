@@ -1,0 +1,402 @@
+@import url("https://kit.fontawesome.com/bc2668a83f.js");
+
+#navbar{
+    background: radial-gradient(circle at 10% 20%, rgb(128, 248, 174) 0%, rgb(223, 244, 148) 90%);
+    color: white;
+}
+.nameBrand{
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+}
+.box-header{
+    height: 600px;
+    display: block;
+}
+#home{
+    background: radial-gradient(circle at 10% 20%, rgb(128, 248, 174) 0%, rgb(223, 244, 148) 90%);
+    padding-bottom: 50px;
+}
+.img-home{
+    width: 100%;
+}
+.text-big{
+    padding-top: 100px;
+    padding-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 70px;
+}
+.small-big{
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: thin;
+}
+#aboutUs{
+    background-color: white;
+}
+a.active{
+    font-weight: bold;
+}
+
+/* section modals */
+table{
+    width: 100%;
+}
+.table-head{
+    background: radial-gradient(circle at 10% 20%, rgb(128, 248, 174) 0%, rgb(223, 244, 148) 90%);
+    color: #fff;
+}
+th{
+    text-align: center;
+}
+
+/* section About Us */
+.test1{
+    margin-top: 55px;
+
+}
+.h1-aboutus{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+}
+.test2{
+    width: 500px;
+    margin-top: 20px;
+}
+.p2{
+    text-align: justify;
+}
+
+/* section Portofolio */
+#portofolio{
+    background: radial-gradient(circle at 10% 20%, rgb(128, 248, 174) 0%, rgb(223, 244, 148) 90%);
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.carousel-inner {
+    padding: 1em;
+}
+.card-portofolio {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    background-color: white
+}
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+    .carousel-item {
+        margin-right: 0;
+        margin-left: 10px;
+        padding: 10px;
+        flex: 0 0 33.333333%;
+        display: block;
+    }
+    .carousel-inner {
+        display: flex;
+    }
+}
+.card-portofolio .img-wrapper {
+      max-width: 100%;
+      height: 13em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.card-portofolio img {
+      max-height: 100%;
+}
+@media (max-width: 767px) {
+    .card-portofolio .img-wrapper {
+      height: 17em;
+    }
+}
+.portofolio-content{
+    border-radius: 5%;
+}
+.portofolio-image{
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+}
+.portofolio-title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.portofolio-content-text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+/*  Style News & Blog  */
+.card{
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.card-title{
+    font-weight:600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.img-fluid{
+    height: 300px;
+    cursor: pointer;
+    transition: transform 1s, filter 0.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(70%);
+}
+.img-fluid:hover{
+    filter: brightness(100%);
+    transform: scale(0.9);
+}
+.news-text-info {
+    background: white;
+    position: relative;
+    z-index: 2;
+    padding: 2px 0 10px;
+    transition: all 0.3s ease-out;
+}
+.text-date{
+    font-size: 14px;
+    margin-left: -10px;
+    color: #292828;
+}
+.category-tag {
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 14px;
+    display: inline-block;
+    padding: 4px 12px;
+    margin-bottom: 5px;
+}
+.news-title-link{
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+.card-text{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*  Style Contact Us */
+#contact{
+    background-color:  white;
+}
+.custom-link{
+    text-decoration: none;
+    color: #000; 
+}
+.custom-link:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* header contact */
+.contact-bg{
+    height: 46vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img//contactUs/contact-bg-test.jpg);
+    background-position: 50% 90%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-bg h3{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.contact-bg h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.line div{
+    margin: 0 0.2rem;
+}
+.line div:nth-child(1),
+.line div:nth-child(3){
+    height: 3px;
+    width: 70px;
+    background: #a6ff96;
+    border-radius: 5px;
+}
+.line{
+    display: flex;
+    align-items: center;
+}
+.line div:nth-child(2){
+    width: 10px;
+    height: 10px;
+    background: #a6ff96;
+    border-radius: 50%;
+}
+.text-parallax{
+    font-weight: 300;
+    opacity: 0.9;
+    padding: 0 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contact-bg .text{
+    margin: 1.6rem 0;
+}
+
+/* Contact Us (info) */
+#contact .info .getIn {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 30px 20px;
+    margin-top: 40px;
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 0.05rem;
+    text-align: center;
+}
+#contact .info .getIn span{
+    color: #a6ff96;
+}
+
+#contact .info .contact-info i{
+    color: black;
+    transition: 0.3s;
+}
+#contact .info .contact-info i:hover{
+    color: #55c042;
+}
+#contact .info .contact-info{
+    margin: 35px 0;
+}
+#contact .info .mail i{
+    font-size: 70px;
+    margin: 10px;
+}
+#contact .info .mail h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-weight: 750;
+    padding: 10px;
+}
+
+/* Social*/
+.social {
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    padding: 0 20px;
+}
+.social h4{
+    margin-bottom: 30px;
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.social .address-contact{
+    padding: 40px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* CUSTOM FORM */
+.custom-form .form-control {
+    margin-bottom: 20px;
+    padding: 14px 10px;
+    transition: all 0.3s;
+}
+
+.custom-form button[type="submit"] {
+    background: #000000;
+    border: 0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.custom-form button[type="submit"]:hover {
+    background: #55c042;
+}
+
+.custom-form .form-label {
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: left; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+/* Akhir style Contact Us */
+
+
+/* Footer */
+footer{
+    /* background-color: #A6FF96!important; */
+    background: radial-gradient(circle at 10% 20%, rgb(164, 253, 198) 0%, rgb(223, 244, 148) 90%);
+}
+.social .sosmed{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 40px 20px;
+    
+}
+.social .sosmed li{
+    display: inline;
+}
+.social .sosmed a {
+    font-size: 30px;
+    padding: 10px 20px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    /* background-color: white; */
+    /* box-shadow: 0 0 20px 10px rgba(0,0,0,0.05); */
+    border-radius: 100%;
+    z-index: 3;
+}
+
+/* Hover Sosmed */
+.social-icon li:hover .fa-instagram {
+    color: #C13584;
+    transition: 0.3s;
+}
+.social-icon li:hover .fa-facebook{
+    color: #4267B2;
+    transition: 0.3s;
+}
+.social-icon li:hover .fa-x-twitter{
+    color: #14171A;
+    transition: 0.3s;
+}
+.social-icon li:hover .fa-linkedin-in{
+    color: #0e76a8;
+    transition: 0.3s;
+}
+.social-icon {
+    margin-left: 0;
+    padding: 0;
+}
+.social-icon li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    transition: all 0.5s;
+}
+.social-icon li:hover .fa-instagram {
+    color: #C13584;
+    transition: 0.3s;
+}
+.social-icon:hover li:not(:hover) {
+    opacity: 0.5;
+}

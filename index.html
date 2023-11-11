@@ -1,89 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gass Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/img/home/icon2.png">
+  <title>GASS | Final Project I</title>
+  
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-    <style src="/assets/css/style.css"></style>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
+  <nav class="navbar sticky-top navbar-expand-lg bg-light" id="navbar">
+    <div class="container">
+      <img src="assets/img/home/icon.png" width="70px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <a class="navbar-brand nameBrand" href="#" hidden> GASS</a>
+        </ul>
 
+        <ul class="navbar-nav d-flex" id="menuHeader">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutUs">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portofolio">Portofolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">News & Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
 
-    <nav>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+  <!-- home -->
+  <section id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-big">Hadir <br> Didekatmu</h1><br>
+          <p class="small-big">Telah tersebar diseluruh penjuru Indonesia
+            <br> Kami hadir sebagai Solusi Pintar masalah Digital anda
+            <br> Visi kami yaitu Perkembangan sosial menjadi lebih cerdas
+            <br> dan lebih aman
+            <br><br>
+            <button id="order" class="btn btn-outline-success" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Pesan Sekarang</button>
+          </p>
+        </div>
+        <div class="col">
+          <div class="box-header">
+            <img src="assets/img/home/banner.png" class="img-home">
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- about us -->
+  <section id="aboutUs">
+    <div class="container">
+      <div class="row">
+        <h1 class="h1-aboutus" style="text-align: center;">ABOUT US !</h1>
+        <div class="col test1" >
+          <p class="p2">
+            Kami menyediakan sejumlah layanan teknologi yang dapat memenuhi kebutuhan bisnis dan individu. 
+            Kami ahli dalam merancang dan memasang jaringan WiFi yang kuat dan andal, memastikan Anda tetap terhubung dengan 
+            dunia digital dengan kecepatan tinggi. 
+            <br>
+            <br>
+            Selain itu, kami juga membantu membangun infrastruktur jaringan yang mendukung pertumbuhan bisnis Anda, 
+            memastikan kelancaran komunikasi, dan memaksimalkan produktivitas. Dalam dunia online yang terus berkembang, kami menyediakan hosting web yang andal dan aman, memungkinkan situs web Anda tetap online 24/7. Keamanan adalah prioritas kami, dan kami menyediakan sistem CCTV canggih untuk melindungi aset Anda dan memantau lingkungan sekitar dengan ketelitian dan kualitas citra yang tinggi. Dengan GASS, Anda dapat mengandalkan solusi teknologi yang terintegrasi untuk menjawab kebutuhan Anda.
+          </p>
+        </div>
+        <div class="col-md-6 test2">
+          <img src="assets/img/aboutUs/gasscmpy.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- portofolio -->
+  <section id="portofolio" class="mt-5">
+    <div class="container">
+      <h1 class="ms-4 text-center portofolio-title">PORTOFOLIO</h1>
+      <div id="portofolio-slider" class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card portofolio-content">
+              <img class="img-fluid portofolio-image" alt="100%x280" src="assets/img/portofolio/logo_pln.jpg">
+              <div class="card-body portofolio-content-text">
+                <h5 class="card-title">PT PLN</h5>
+                <p class="card-text">Pemasangan sistem perangkat CCTV nirkabel di PT PLN</p>
+                <p class="card-text">2023</p>
               </div>
             </div>
-          </nav>
-    </nav>
-
-    <div class="container">
-
-        <!-- home -->
-        <section id="home">
-
-        </section>
-
-         <!-- about us -->
-         <section id="aboutUs">
-            
-         </section>
-
-          <!-- portofolio -->
-        <section id="portofolio">
-            
-        </section>
-
-         <!-- blog -->
-         <section id="portofolio">
-            
-         </section>
-
-          <!-- contact us -->
-        <section id="portofolio">
-            
-        </section>
-
-        <footer>
-
-        </footer>
-
+          </div>
+          <div class="carousel-item">
+            <div class="card portofolio-content">
+              <img class="img-fluid portofolio-image" alt="100%x280" src="assets/img/portofolio/logo_wgs.jpg">
+              <div class="card-body portofolio-content-text">
+                <h5 class="card-title">PT WGS</h5>
+                <p class="card-text">Pembuatan hosting pada web company profile PT WGS</p>
+                <p class="card-text">2023</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card portofolio-content">
+              <img class="img-fluid portofolio-image" alt="100%x280" src="assets/img/portofolio/logo_telkom.jpg">
+              <div class="card-body portofolio-content-text">
+                <h5 class="card-title">PT Telkom</h5>
+                <p class="card-text">Pemasangan jaringan komputer baru dan perawatan jaringan PT Telkom</p>
+                <p class="card-text">2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card portofolio-content">
+              <img class="img-fluid portofolio-image" alt="100%x280" src="assets/img/portofolio/logo_gi.jpg">
+              <div class="card-body portofolio-content-text">
+                <h5 class="card-title">PT Garuda</h5>
+                <p class="card-text">Maintenance jaringan dan software pada PT Garuda</p>
+                <p class="card-text">2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card portofolio-content">
+              <img class="img-fluid portofolio-image" alt="100%x280" src="assets/img/portofolio/logo_kai.jpg">
+              <div class="card-body portofolio-content-text">
+                <h5 class="card-title">PT KAI</h5>
+                <p class="card-text">Pemasangan wifi pada rangkaian gerbong PT KAI</p>
+                <p class="card-text">2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#portofolio-slider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#portofolio-slider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <javascript src="/assets/js/script.js"></javascript>
+  </section>
+
+  <!-- blog -->
+  <section id="blog">
+    <div class="container my-5">
+      <h1 class="text-center my-5 mb-lg-5 mb-4">NEWS &amp; BLOG</h1>
+      
+      <!-- 3 Card Bagian  atas -->
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://infokomputer.grid.id/read/122537780/apa-saja-manfaat-implementasi-teknologi-jaringan-5g"
+              target="_blank">
+              <img src="assets/img/blog/img-tekno1.jpg" class="card-img-top img-fluid" alt="5G">
+            </a>
+            <div class="card-body">
+              <a class="news-title-link"
+                href="https://infokomputer.grid.id/read/122537780/apa-saja-manfaat-implementasi-teknologi-jaringan-5g"
+                target="_blank">
+                <h5 class="card-title">Apa Saja Manfaat Implementasi Teknologi Jaringan 5G?</h5>
+              </a>
+              <p class="card-text">Cepat atau lambat Indonesia akan memasukan era 5G yang menawarkan sejuta manfaat bagi
+                kehidupan manusia dan mampu mengubah cara hidup serta bekerja masyarakat.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 30 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://infokomputer.grid.id/read/123379208/intel-akan-naikkan-harga-chip-tahun-ini-harga-komputer-pc-makin-mahal"
+              target="_blank">
+              <img src="assets/img/blog/img-tekno3.jpg" class="card-img-top img-fluid" alt="chip intel">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">
+                <a class="news-title-link"
+                  href="https://infokomputer.grid.id/read/123379208/intel-akan-naikkan-harga-chip-tahun-ini-harga-komputer-pc-makin-mahal"
+                  target="_blank">
+                  Intel Akan Naikkan Harga Chip Tahun Ini, Harga Komputer PC Makin Mahal
+                </a>
+              </h5>
+              <p class="card-text">
+                Intel akan menaikkan harga CPU, chip WiFi dan chip lainnya pada akhir tahun ini,
+                menyusul pemberitahuan Intel ke para pelanggannya tentang kenaikan harga.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 35 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://infokomputer.grid.id/read/123888821/domainesia-tawarkan-layanan-hosting-dan-server-andal-seperti-apa"
+              target="_blank">
+              <img src="assets/img/blog/layanan-hosting.jpeg" class="card-img-top img-fluid" alt="layanan hosting">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">
+                <a class="news-title-link"
+                  href="https://infokomputer.grid.id/read/123888821/domainesia-tawarkan-layanan-hosting-dan-server-andal-seperti-apa"
+                  target="_blank">
+                  Domainesia Tawarkan Layanan Hosting dan Server Andal. Seperti Apa?
+                </a>
+              </h5>
+              <p class="card-text">
+                Domainesia, sebagai penyedia layanan hosting di Indonesia, telah membantu banyak bisnis dalam
+                memanfaatkan potensi server dengan efektif.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 36 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 Card Bagian Bawah -->
+      <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://www.cnnindonesia.com/teknologi/20231031181331-213-1018261/satelit-satria-1-berhasil-ngorbit-bersiap-kasih-internet-gratis"
+              target="_blank">
+              <img src="assets/img/blog/ilustrasi-satelit-satria-1-kominfo_169.png" class="card-img-top img-fluid"
+                alt="ilustrasi">
+            </a>
+            <div class="card-body">
+              <div class="news-text-info">
+                <span class="category-tag me-3 bg-info">Kunjungi</span>
+                <strong class="text-date">31 Oktober 2023</strong>
+              </div>
+              <h5 class="card-title">
+                <a class="news-title-link"
+                  href="https://www.cnnindonesia.com/teknologi/20231031181331-213-1018261/satelit-satria-1-berhasil-ngorbit-bersiap-kasih-internet-gratis"
+                  target="_blank">
+                  Satelit SATRIA-1 Berhasil Ngorbit, Bersiap Kasih Internet Gratis
+                </a>
+              </h5>
+              <p class="card-text">
+                Satelit Republik Indonesia atau SATRIA-1 berhasil memasuki orbitnya di luar angkasa.
+                Sejumlah warga di wilayah pelosok bersiap mendapatkan layanan internet gratis.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://inet.detik.com/cyberlife/d-7012882/miliuner-kripto-borong-chip-ai-senilai-rp-7-9-triliun-buat-apa"
+              target="_blank">
+              <img src="assets/img/blog/crypto.jpeg" class="card-img-top img-fluid" alt="ilustrasi-chipAi">
+            </a>
+            <div class="card-body">
+              <div class="news-text-info">
+                <span class="category-tag me-3 bg-info">Kunjungi</span>
+                <strong class="text-date">1 November 2023</strong>
+              </div>
+              <h5 class="card-title">
+                <a class="news-title-link"
+                  href="https://inet.detik.com/cyberlife/d-7012882/miliuner-kripto-borong-chip-ai-senilai-rp-7-9-triliun-buat-apa"
+                  target="_blank">
+                  Miliuner Kripto Borong Chip AI Senilai Rp 7,9 Triliun, Buat Apa?
+                </a>
+              </h5>
+              <p class="card-text">
+                Organisasi nonprofit yang dibiayai miliuner kripto bernama Jeb McCaleb memborong chip AI Nvidia senilai
+                USD 500 juta atau sekitar Rp 7,9 triliun. Buat apa?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- contact us -->
+  <section id="contact">
+    <div class="contact-bg">
+      <!-- <h3>Get in Touch with Us</h3> -->
+      <h2>Get in Touch</h2>
+
+      <!-- garis tambahan -->
+      <div class="line">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <p class="text-parallax">
+        Kami adalah tim yang berkomitmen memberikan layanan terbaik. Hubungi kami melalui email atau telepon. Kami siap
+        membantu Anda mencapai tujuan. <br>
+        Terima kasih atas kunjungan Anda!</p>
+    </div>
+
+    <!-- info -->
+    <div class="container info">
+      <h2 class="getIn">CONTACT US</h2>
+      <div class="contact-info">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="text-center row justify-content-md-center mail">
+              <div class="col col-lg-6">
+                <a href="mailto:gass@gmail.com"><i class="fa-solid fa-headset"></i></a>
+                <h3><a href="tel:+62 812 XXXX XXXX" target="_blank" class="custom-link">Call Us</a></h3>
+                <p>(022) 873602</p>
+              </div>
+
+              <div class="col-md-4 col-lg-6">
+                <a href="mailto:gass@gmail.com"><i class="fa-solid fa-envelope-open-text"></i></a>
+                <h3><a href="mailto:gass@gmail.com" target="_blank" class="custom-link">Email Us</a></h3>
+                <p>gass.contact@yahoo.co.id</p>
+              </div>
+
+              <div class="col-md-6 col-lg-6">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <h3><a href="https://wa.me/628XXXXXXX" class="custom-link">WA Chat</a></h3>
+                <p>+62 8951 7911 22</p>
+              </div>
+
+              <div class="col-md-6 col-lg-6">
+                <a href="#"><i class="fa-solid fa-fax"></i></i></a>
+                <h3><a href="https://wa.me/628XXXXXXX" class="custom-link">Fax</a></h3>
+                <p>(022) 873600</p>
+              </div>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <form class="custom-form contact-form row" action="#" method="post" role="form">
+                <div class="col-lg-6 col-6 form-group">
+                  <label for="contact-name" class="form-label">Nama Lengkap</label>
+
+                  <input type="text" name="contact-name" id="contact-name" class="form-control" placeholder="Nama Anda" required />
+                </div>
+
+                <div class="col-lg-6 col-6">
+                  <label for="contact-phone" class="form-label">Nomor Telepon</label>
+
+                  <input type="telephone" name="contact-phone" id="contact-phone" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" class="form-control" placeholder="0812-3456-7890" />
+                </div>
+
+                <div class="col-12">
+                  <label for="contact-email" class="form-label">Email</label>
+
+                  <input type="email" name="contact-email" id="contact-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email Anda" required="" />
+
+                  <label for="contact-message" class="form-label">Pesan</label>
+
+                  <textarea class="form-control" rows="5" id="contact-message" name="contact-message" placeholder="Pesan Anda"></textarea>
+                </div>
+
+                <div class="col-lg-3 col-12 ms-auto">
+                  <button type="submit" class="form-control">Kirim</button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </div>
+
+  </section>
+
+  <footer class="">
+    <div class="container info">
+      <!-- social -->
+      <div class="row social">
+        <div class="col-lg-8 address-contact">
+          <h4><a href="index.html" class="custom-link">PT Gass Indonesia</a></h4>
+          <li><i class="fa-solid fa-location-dot"></i>
+            <a href="#" class="custom-link"> Jl. Mentari Pagi Tersenyum No.2A</a>
+          </li>
+          <li><i class="fa-solid fa-envelope"></i>
+            <a href="#" class="custom-link"> gass.contact@yahoo.co.id</a>
+          </li>
+          <li><i class="fa-solid fa-earth-americas"></i>
+            <a href="#" class="custom-link"> gass-company.co.id</a>
+          </li>
+
+        </div>
+        <div class="col-lg-4 sosmed">
+          <h4>Know more about us</h4>
+          <ul class="social-icon">
+            <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Pilih Fitur Layanan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-hover" id="tableOrder">
+            <thead class="table-head">
+              <tr>
+                <th>Fitur</th>
+                <th>Price (Rp)</th>
+                <th>Add</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Web Hosting</td>
+                <td class="text-center">1.000.000</td>
+                <td class="text-center"><input type="checkbox" id="1" class="checkbox"></td>
+              </tr>
+              <tr>
+                <td>WiFi</td>
+                <td class="text-center">2.000.000</td>
+                <td class="text-center"><input type="checkbox" id="2" class="checkbox"></td>
+              </tr>
+              <tr>
+                <td>CCTV</td>
+                <td class="text-center">3.000.000</td>
+                <td class="text-center"><input type="checkbox" id="3" class="checkbox"></td>
+              </tr>
+              <tr>
+                <td>Pemasangan Jaringan</td>
+                <td class="text-center">4.000.000</td>
+                <td class="text-center"><input type="checkbox" id="4" class="checkbox"></td>
+              </tr>
+              <tr>
+                <td>Design Web</td>
+                <td class="text-center">5.000.000</td>
+                <td class="text-center"><input type="checkbox" id="5" class="checkbox"></td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          <div class="container">
+            Fitur Dipilih : <div id="dataList" style="display: inline;"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="closeBtn" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" id="orderBtn" class="btn btn-primary">Save & Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/bc2668a83f.js" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script src="/assets/js/script.js"></script>
 </body>
+
 </html>
