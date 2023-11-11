@@ -103,6 +103,7 @@ table{
 @media (min-width: 768px) {
     .carousel-item {
         margin-right: 0;
+        margin-left: 10px;
         padding: 10px;
         flex: 0 0 33.333333%;
         display: block;
