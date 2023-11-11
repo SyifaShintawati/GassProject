@@ -93,7 +93,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
   let scrollPosition = 0;
   $("#portofolio-slider .carousel-control-next").on("click", function () {
     if (scrollPosition < portofolioWidth - cardWidth * 4) {
-      scrollPosition += cardWidth;
+      scrollPosition += (cardWidth + 50);
       $("#portofolio-slider .carousel-inner").animate(
         { scrollLeft: scrollPosition },
         600
@@ -102,7 +102,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
   });
   $("#portofolio-slider .carousel-control-prev").on("click", function () {
     if (scrollPosition > 0) {
-      scrollPosition -= cardWidth;
+      scrollPosition -= (cardWidth + 50);
       $("#portofolio-slider .carousel-inner").animate(
         { scrollLeft: scrollPosition },
         600
