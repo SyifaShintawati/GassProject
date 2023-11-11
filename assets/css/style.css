@@ -207,7 +207,7 @@ table{
 
 .custom-link{
     text-decoration: none;
-    color: #000;
+    color: #000; 
 }
 .custom-link:hover {
     color: inherit;
@@ -271,7 +271,7 @@ table{
 }
 
 /* Contact Us (info) */
-#contact .info h2{
+#contact .info .getIn {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 30px 20px;
     margin-top: 40px;
@@ -332,9 +332,56 @@ table{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+/*---------------------------------------
+  CUSTOM FORM            
+-----------------------------------------*/
+.custom-form .form-control {
+    margin-bottom: 20px;
+    padding: 14px 10px;
+    transition: all 0.3s;
+}
+
+.custom-form button[type="submit"] {
+    background: #000000;
+    border: 0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.custom-form button[type="submit"]:hover {
+    background: #55c042;
+}
+
+.custom-form .form-label {
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: left; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+
+
+/* Akhir style Contact Us */
+
+
+
+
+/* Footer */
+footer{
+    /* background-color: #A6FF96!important; */
+    background: radial-gradient(circle at 10% 20%, rgb(164, 253, 198) 0%, rgb(223, 244, 148) 90%);
+}
+
+
 .social .sosmed{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 40px 20px;
+    
 }
 
 .social .sosmed li{
@@ -348,9 +395,10 @@ table{
     text-align: center;
     text-decoration: none;
     color: black;
-    /* background-color: #a6ff96; */
-    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    /* background-color: white; */
+    /* box-shadow: 0 0 20px 10px rgba(0,0,0,0.05); */
     border-radius: 100%;
+    z-index: 3;
 }
 
 /* Hover Sosmed */
@@ -390,7 +438,3 @@ table{
 .social-icon:hover li:not(:hover) {
     opacity: 0.5;
 }
-
-
-
-/* Akhir style Contact Us */
