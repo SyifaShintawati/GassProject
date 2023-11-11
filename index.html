@@ -167,7 +167,7 @@
   <!-- blog -->
   <section id="blog">
     <div class="container my-5">
-      <h1 class="text-center my-5 mb-lg-5 mb-4">News &amp; Blog</h1>
+      <h1 class="text-center my-5 mb-lg-5 mb-4">NEWS &amp; BLOG</h1>
       
       <!-- 3 Card Bagian  atas -->
       <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -300,59 +300,101 @@
     
     <!-- info -->
     <div class="container info">
-      <h2 class="getIn">Contact <span>Us</span></h2>
-      <div class="text-center contact-info">
-        <div class="row justify-content-md-center mail">
-          <div class="col col-lg-4">
-            <a href="mailto:gass@gmail.com"><i class="fa-solid fa-headset"></i></a>
-            <h3><a href="tel:+62 812 XXXX XXXX" target="_blank" class="custom-link">Call Us</a></h3>
-            <p>1500 XXX</p>
-          </div>
+      <h2 class="getIn">CONTACT US</h2>
+      <div class="contact-info">
+        <div class="row">
+          <div class="col">
+            <div class="text-center row justify-content-md-center mail">
+              <div class="col col-lg-6">
+                <a href="mailto:gass@gmail.com"><i class="fa-solid fa-headset"></i></a>
+                <h3><a href="tel:+62 812 XXXX XXXX" target="_blank" class="custom-link">Call Us</a></h3>
+                <p>(022) 873602</p>
+              </div>
 
-          <div class="col-md-4 col-lg-4">
-            <a href="mailto:gass@gmail.com"><i class="fa-solid fa-envelope-open-text"></i></a>
-            <h3><a href="mailto:gass@gmail.com" target="_blank" class="custom-link">Email Us</a></h3>
-            <p>gass@gmail.com</p>
-          </div>
+              <div class="col-md-4 col-lg-6">
+                <a href="mailto:gass@gmail.com"><i class="fa-solid fa-envelope-open-text"></i></a>
+                <h3><a href="mailto:gass@gmail.com" target="_blank" class="custom-link">Email Us</a></h3>
+                <p>gass.contact@yahoo.co.id</p>
+              </div>
 
-          <div class="col col-lg-4">
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-            <h3><a href="https://wa.me/628XXXXXXX" class="custom-link">WA Chat</a></h3>
-            <p>+62 8XX XXXX XXXX</p>
+              <div class="col col-lg-6">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <h3><a href="https://wa.me/628XXXXXXX" class="custom-link">WA Chat</a></h3>
+                <p>+62 8951 7911 22</p>
+              </div>
+
+              <div class="col col-lg-6">
+                <a href="#"><i class="fa-solid fa-fax"></i></i></a>
+                <h3><a href="https://wa.me/628XXXXXXX" class="custom-link">Fax</a></h3>
+                <p>(022) 873600</p>
+              </div>
+              </div>
+          </div>
+          <div class="col">
+              <form class="custom-form contact-form row" action="#" method="post" role="form">
+                <div class="col-lg-6 col-6 form-group">
+                  <label for="contact-name" class="form-label">Nama Lengkap</label>
+
+                  <input type="text" name="contact-name" id="contact-name" class="form-control" placeholder="Nama Anda" required />
+                </div>
+
+                <div class="col-lg-6 col-6">
+                  <label for="contact-phone" class="form-label">Nomor Telepon</label>
+
+                  <input type="telephone" name="contact-phone" id="contact-phone" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" class="form-control" placeholder="0812-3456-7890" />
+                </div>
+
+                <div class="col-12">
+                  <label for="contact-email" class="form-label">Email</label>
+
+                  <input type="email" name="contact-email" id="contact-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email Anda" required="" />
+
+                  <label for="contact-message" class="form-label">Pesan</label>
+
+                  <textarea class="form-control" rows="5" id="contact-message" name="contact-message" placeholder="Pesan Anda"></textarea>
+                </div>
+
+                <div class="col-lg-3 col-12 ms-auto">
+                  <button type="submit" class="form-control">Kirim</button>
+                </div>
+              </form>
+            </div>
+
           </div>
         </div>
       </div>
-
-      <!-- social -->
-        <div class="row social">
-          <div class="col-lg-8 address-contact">
-            <h4><a href="index.html" class="custom-link">PT Gass Indonesia</a></h4>
-            <li><i class="fa-solid fa-location-dot"></i>
-              <a href="#" class="custom-link"> Jl. Bismillah Nilai A</a>
-            </li>
-            <li><i class="fa-solid fa-envelope"></i>
-              <a href="#" class="custom-link"> gass@gmail.com</a>
-            </li>
-            <li><i class="fa-solid fa-earth-americas"></i>
-              <a href="#" class="custom-link"> gass.co.id</a>
-            </li>
-
-          </div>
-          <div class="col-lg-4 sosmed">
-            <h4>Know more about us</h4>
-            <ul class="social-icon">
-              <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-              <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-              <li><a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-              <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            </ul>
-          </div>
-        </div>
   </div>
 
   </section>
 
-  <footer>
+  <footer class="">
+    <div class="container info">
+      <!-- social -->
+      <div class="row social">
+        <div class="col-lg-8 address-contact">
+          <h4><a href="index.html" class="custom-link">PT Gass Indonesia</a></h4>
+          <li><i class="fa-solid fa-location-dot"></i>
+            <a href="#" class="custom-link"> Jl. Mentari Pagi Tersenyum No.2A</a>
+          </li>
+          <li><i class="fa-solid fa-envelope"></i>
+            <a href="#" class="custom-link"> gass.contact@yahoo.co.id</a>
+          </li>
+          <li><i class="fa-solid fa-earth-americas"></i>
+            <a href="#" class="custom-link"> gass-company.co.id</a>
+          </li>
+
+        </div>
+        <div class="col-lg-4 sosmed">
+          <h4>Know more about us</h4>
+          <ul class="social-icon">
+            <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
   </footer>
 
